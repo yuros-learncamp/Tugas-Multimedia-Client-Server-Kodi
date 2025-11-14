@@ -2,7 +2,28 @@
 
 Pertama install Kodi dengan menggunakan kode ini
 
-Jika sudah, buka aplikasi Kodi, lalu masuk ke menu Setting dan pilih menu Services
+``` bash
+lsb_release -d
+```
+
+```bash
+apt update ; apt install kodi -y
+```
+
+masukan prompt berikut untuk memastikan kodi sudah terinstall dengan baik
+
+```bash
+kodi -version
+```
+
+Jika sudah, buka aplikasi Kodi, 
+
+```bash
+kodi
+```
+
+lalu masuk ke menu Setting dan pilih menu Services
+
 
 Pada bagian UPnP / DLNA, aktifkan menu Enable UPnP Support dan Share My Libraries 
 
