@@ -45,18 +45,47 @@ Lalu install Samba sebagai penghubung antar device menggunakan prompt ini
 sudo apt update
 sudo apt install samba
 ```
+edit samba config
+
+```
+sudo nano /etc/samba/smb.conf
+```
+lalu masukan di paling bawah
+
+```
+[Share]
+path = /home/kautsar/Share
+browseable = yes
+read only = no
+guest ok = yes
+force user = kautsar
+```
+
+Simpan (CTRL + O, Enter) → keluar (CTRL + X)
 
 
 Lalu siapkan file yang akan ditambahkan pada Kodi, seperti file musik yang diisi oleh musik musik yang akan dimasukkan ke menu Music dan file video yang akan dimasukkan pada menu Video
 
-Buka kembali Kodi kembali, masukkan musik dengan mengklik menu Music, pilih Files, lalu pilih Add Music, lalu klik Browse untuk memilih file yang telah dibuat sebelumnya untuk memasukkan file tersebut ke dalam Kodi
+Buka kembali Kodi kembali, masukkan musik dengan mengklik menu Music,
 
-![Screenshot]
+![Screenshot](https://github.com/yuros-learncamp/Tugas-Multimedia-Client-Server-Kodi/blob/main/picture/Screenshot%20from%202025-11-14%2013-24-39.png)
+
+pilih Files,
+
+![Screenshot](https://github.com/yuros-learncamp/Tugas-Multimedia-Client-Server-Kodi/blob/main/picture/Screenshot%20from%202025-11-14%2013-24-39.png)
+
+lalu pilih Add Music, 
+
+![Screenshot](https://github.com/yuros-learncamp/Tugas-Multimedia-Client-Server-Kodi/blob/main/picture/Screenshot%20from%202025-11-14%2013-24-44.png)
+
+lalu klik Browse untuk memilih file yang telah dibuat sebelumnya untuk memasukkan file tersebut ke dalam Kodi
+
+![Screenshot](https://github.com/yuros-learncamp/Tugas-Multimedia-Client-Server-Kodi/blob/main/picture/Screenshot%20from%202025-11-14%2013-24-49.png)
 
 Lakukan ini juga untuk memasukkan video, music video, dsb
 
 Jika sudah, download VLC pada device ke dua. Pilih jaringan lokal yang tersedia, lalu pilih nama server Kodi pada device yang pertama dan kalian bisa melihat isi file yang terdapat pada server tersebut.
 
-![Screenshot]
+![Screenshot](https://github.com/yuros-learncamp/Tugas-Multimedia-Client-Server-Kodi/blob/main/picture/WhatsApp%20Image%202025-11-14%20at%2015.02.57.jpeg)
 
 
